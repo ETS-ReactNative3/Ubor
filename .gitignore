@@ -81,3 +81,6 @@ amplify.team-provider-info.json
 .secret-*
 **.sample
 #amplify-do-not-edit-end
+
+#sensitive files
+install.cmd
