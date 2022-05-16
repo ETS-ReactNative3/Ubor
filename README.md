@@ -20,7 +20,7 @@ https://user-images.githubusercontent.com/77874716/168509944-390fcb06-4a8d-479c-
 # Installation
 1. Download Android Studio and Node.js to properly run the application. Android Studio provides the tools to emulate Android devices and Node.js is used to run the application.
 
-2. In the Device Manager on Android Studio, download a new Android phone emulator. Then, run the emulator using the play button on the Device Manager window.
+2. In the Device Manager on Android Studio, download a new Android phone emulator. In our case we chose Pixel4 as our virtual device. Run the emulator using the play button on the Device Manager window.
 
 3. Open two command prompts. On each command prompt, navigate to the Ubor folder. The user can then pick whether they would like to run the User application or the Driver application.
 
@@ -29,13 +29,6 @@ https://user-images.githubusercontent.com/77874716/168509944-390fcb06-4a8d-479c-
 5. First, run the command “npm i”. Then, on one terminal, run the command “npm start” and on the other terminal, run the command “npm run android” (Windows). When using Mac if you encounter any issues type “chmod 755 android/gradlew” and into terminal then type “npx npm start” and open another terminal and type “npx npm run android”. If you are having troubles with both Windows or Mac you can enter the command “npm i” again.  
 
 6. After configuring, building, and then downloading the application onto the emulator, the emulator should then run and the application can be tested. 
- 
-# Running the program
-Steps to compile and run this application, the program can be run from two options.
-1. Clone The Repository on your local device.
-2. Starting from the driver's side, cd DriverApp folder
-3. perform npm install if it is the first time running, then npm start. React native will now start
-
 
 # Sample Screenshots
 
