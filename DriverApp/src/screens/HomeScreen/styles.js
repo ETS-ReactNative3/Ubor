@@ -1,11 +1,15 @@
 import { StyleSheet, Dimensions } from 'react-native';
 
+
+  /** 
+ * This file holds the styling information index.js uses
+*/
 const styles = StyleSheet.create({
   bottomContainer: {
     height: 100,
     backgroundColor: 'white',
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
   },
@@ -15,20 +19,21 @@ const styles = StyleSheet.create({
   },
   roundButton: {
     position: 'absolute',
-    backgroundColor: 'white',
+    backgroundColor: 'orange',
     padding: 10,
-    borderRadius: 25,
+    borderRadius: 60,
   },
   goButton: {
     position: 'absolute',
-    backgroundColor: '#1495ff',
-    width: 75,
-    height: 75,
+    backgroundColor: 'orange',
+    width: 60,
+    height: 60,
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 50,
+    borderRadius: 35,
     bottom: 110,
-    left: Dimensions.get('window').width / 2 - 37,
+    left: 10,
+    top: 10
   },
   goText: {
     fontSize: 30,
@@ -43,8 +48,8 @@ const styles = StyleSheet.create({
     height: 50,
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 50,
-    top: 10,
+    borderRadius: 40,
+    top: 20,
     left: Dimensions.get('window').width / 2 - 50,
   },
   balanceText: {

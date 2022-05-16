@@ -7,7 +7,8 @@ Updated: May 2022
 
 # Introduction
 
-placeholder
+# Video Demonstration
+https://user-images.githubusercontent.com/77874716/168509944-390fcb06-4a8d-479c-b2b2-c8e1b8b835d4.mp4
 
 # Installation
 1. Must install android studio. The virtual device chosen is Pixel4

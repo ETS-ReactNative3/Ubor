@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { View, Text, Pressable } from "react-native";
 import {DrawerContentScrollView, DrawerItemList} from '@react-navigation/drawer';
+import { Auth } from "aws-amplify";
 
-const CustomDrawer = (props) => {
+const CustomDrawer =  (props) => {
+const  [User,setUser]=useState();
+  const hello = async() => {
+    setUser(await Auth.currentUserInfo());
+  }
+  useEffect(()=>{
+    hello();
+    console.log(User);
+  },[])
   return (
     <DrawerContentScrollView {...props}>
       <View style={{backgroundColor: '#212121', padding: 15}}>
@@ -21,12 +30,11 @@ const CustomDrawer = (props) => {
           }}/>
 
           <View>
-            <Text style={{color: 'white', fontSize: 24}}>Jay Gurjar</Text>
-            <Text style={{color: 'lightgrey'}}>5.00 *</Text>
+            <Text style={{color: 'white', fontSize: 24}}>{User?.attributes['custom:fname']+' '+User?.attributes['custom:lname']}</Text>
+            
           </View>
         </View>
 
-        {/* Messages Row */}
         <View style={{
           borderBottomWidth: 1,
           borderBottomColor: '#919191',
@@ -40,22 +48,12 @@ const CustomDrawer = (props) => {
             <Text style={{color: '#dddddd', paddingVertical: 5,}}>Messages</Text>
           </Pressable>
         </View>
-
-        { /* Do more */}
-        <Pressable
-          onPress={() => {console.warn('Make Money Driving')}}>
-          <Text style={{color: '#dddddd', paddingVertical: 5,}}>Do more with your account</Text>
-        </Pressable>
-
-        {/* Make money */}
-        <Pressable onPress={() => {console.warn('Make Money Driving')}}>
-          <Text style={{color: 'white', paddingVertical: 5}}>Make money driving</Text>
-        </Pressable>
-
-
       </View>
 
       <DrawerItemList {...props} />
+      <Pressable onPress={() => {Auth.signOut()}}>
+          <Text style={{color: 'grey',fontWeight: "bold", paddingVertical: 8,paddingLeft: 20}}>Sign Out</Text>
+        </Pressable>
     </DrawerContentScrollView>
   );
 };

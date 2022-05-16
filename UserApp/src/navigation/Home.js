@@ -1,10 +1,8 @@
 import React from "react";
-import {View, Text} from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack'
-import { createDrawerNavigator } from "@react-navigation/drawer";
-import SearchResults from '../screens/SearchResults';
-import HomeScreen from '../screens/HomeScreen';
-import DestinationSearch from '../screens/DestinationPage';
+import SearchResults from '../screens/UserSearchResults';
+import HomeScreen from '../screens/InitialScreen';
+import FinalDestinationPage from '../screens/FinalDestinationPage';
 
 
 const HomeNavigator = (props) => {
@@ -15,7 +13,7 @@ const HomeNavigator = (props) => {
         headerShown: false,
       }}>
      <Stack.Screen name={"Home"} component={HomeScreen} />
-      <Stack.Screen name={"DestinationSearch"} component={DestinationSearch} />
+      <Stack.Screen name={"DestinationSearch"} component={FinalDestinationPage} />
       <Stack.Screen name={"SearchResults"} component={SearchResults} />
      </Stack.Navigator> 
   );

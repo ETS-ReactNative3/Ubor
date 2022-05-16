@@ -1,11 +1,10 @@
 import React from "react";
-import {View, Text} from 'react-native';
+import {View, Text,Pressable} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack'
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import HomeNavigator from './Home'
 // import HomeNavigator from "./Home";
-import HomeScreen from '../screens/HomeScreen';
 import CustomDrawer from "./CustomDrawer";
 
 const Drawer = createDrawerNavigator();
@@ -33,17 +32,9 @@ const RootNavigator = (props) => {
            {() => <DummyScreen name={"Your Trips"} />}
         </Drawer.Screen>
 
-        <Drawer.Screen name="Help">
-          {() => <DummyScreen name={"Help"} />}
-        </Drawer.Screen>
-
-        <Drawer.Screen name="Wallet">
-          {() => <DummyScreen name={"Wallet"} />}
-        </Drawer.Screen>
-
         <Drawer.Screen name="Settings">
           {() => <DummyScreen name={"Settings"} />}
-        </Drawer.Screen>
+        </Drawer.Screen>        
 
       </Drawer.Navigator>
     </NavigationContainer>
