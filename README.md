@@ -25,7 +25,7 @@ https://user-images.githubusercontent.com/77874716/168509944-390fcb06-4a8d-479c-
 
 4. Upon choosing the application that the user would like to run, navigate to the inside of the respective folder on both command prompts (ie. if you picked the User app, then navigate to the User app on both command prompts).
 
-5. First, run the command “npm i”. Then, on one terminal, run the command “npm start” and on the other terminal, run the command “npm run android” (Windows). When using Mac if you encounter any issues type “chmod 755 android/gradlew” and into terminal then type “npx npm start” and open another terminal and type “npx npm run android”. If you are having troubles with both Windows or Mac you can enter the command “npm i” again.  
+5. First, run the command```npm i```. Then, on one terminal, run the command ```npm start``` and on the other terminal, run the command ```npm run android``` (Windows). When using Mac if you encounter any issues type ```chmod 755 android/gradlew``` and into terminal then type ```npx npm start``` and open another terminal and type “npx npm run android”. If you are having troubles with both Windows or Mac you can enter the command ```npm i``` again.  
 
 6. After configuring, building, and then downloading the application onto the emulator, the emulator should then run and the application can be tested. 
 
