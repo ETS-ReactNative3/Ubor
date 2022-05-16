@@ -5,8 +5,10 @@ Updated: May 2022
 # Introduction
 Ubor is a lightweight mock of Uber and was completed as a team for our Software Architecture class(SENG401) at the University of Calgary. 
 The goal of this project is to learn more about mobile development, AWS and its different microservices. Ubor has the main functionalities 
-such as drivers and users accepting a ride, distance/time calculation and real time location updates. The front end was built using React-Native and tested within Android Studio.
-The back end is connected to AWS using AWS Amplify. Through Amplify we are able to easily connect it to other AWS Microservices. We used AWS Cognito for login authentication, AppSync
+such as drivers and users accepting a ride, distance/time calculation and real time location updates. 
+
+The front end was built using React-Native and tested within Android Studio.
+The back end is connected to AWS using AWS Amplify. Through Amplify we are able to easily connect it to other AWS microservices. We used AWS Cognito for login authentication, AppSync
 for GraphQL and DynamoDB for storage. We also used Google Maps API to get real time location updates. 
 
 # Video Demonstration
