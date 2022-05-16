@@ -1,7 +1,4 @@
 # Ubor
-Hi
-Welcome to Ubor
-
 
 Updated: May 2022
 
